@@ -18,6 +18,7 @@ jobs:
         run: | 
           wget https://beijing-online-public-1257309290.cos.ap-beijing.myqcloud.com/format.py
           python3 format.py
+          cat results.sarif
       - name: Check if file exists
         run: |
           if [ -f "results.sarif" ]; then
